@@ -9,7 +9,7 @@ const projects = [
     year: "April 2025",
     align: "right",
     description:"Stock markets generate vast amounts of real-time data that require efficient processing, analysis, and visualization. This project utilizes Apache Kafka, AWS cloud services, and Python to build a scalable pipeline for streaming, analyzing, and storing real-time stock market data. By leveraging distributed computing and machine learning techniques, this system enables traders, analysts, and investors to make data-driven decisions based on live market trends.",
-    image: "public/images/stock.jpeg",
+    image: "/images/stock.jpeg",
     link: "#",
   },
   {
@@ -17,7 +17,7 @@ const projects = [
     year: "Jan 2025",
     align: "left",
     description:"Insurance companies must determine optimal premium rates to balance profitability and competitiveness. Underpricing can lead to financial losses, while overpricing can drive customers to competitors. This project leverages regression analysis and predictive modeling to forecast optimal insurance premiums by analyzing historical claims data, risk factors, and market trends.",
-    image: "public/images/insurance.jpg",
+    image: "/images/insurance.jpg",
     link: "#",
   },
   {
@@ -25,7 +25,7 @@ const projects = [
     year: "Mar 2025",
     align: "right",
     description:" In the Investigating Netflix Movies and Guest Stars in The Office project, you will use data manipulation and visualization to solve a real-world data science problem. You will perform deep exploratory data analysis and draw conclusions from detailed graphs. ",
-    image: "public/images/netflix.avif",
+    image: "/images/netflix.avif",
     link: "#",
   },
   {
@@ -33,7 +33,7 @@ const projects = [
     year: "Feb 2025",
     align: "left",
     description:"Employee Performance: Analysis of performance reviews to identify top performers and areas for improvement.Attrition Rates: Examination of attrition data to understand the reasons behind employee turnover.Employee Satisfaction: Insights from satisfaction surveys to gauge employee morale and identify factors affecting job satisfaction",
-    image:"public/images/hr_ summary.png",
+    image:"/images/hr_ summary.png",
     link: "https://github.com/sarojmishraa/HRAnalysisProjects",
   },
   {
@@ -42,7 +42,7 @@ const projects = [
     align: "right",
     description:`⛅ Weather Data Analysis – Insights from Climate Trends
 🚀 This Weather Data Analysis project explores historical and real-time weather data to identify patterns, trends, and anomalies. Built using Python, Pandas, NumPy, Matplotlib, Seaborn, and Power BI, it provides deep insights into climate variations.`,
-    image: "public/images/weather.webp",
+    image: "/images/weather.webp",
     link: "#",
   },
   {
@@ -60,7 +60,7 @@ This Digital Agency Website is a sleek, responsive, and visually appealing front
 ✅ 🎭 Smooth Animations – Powered by Framer Motion
 
 🚀 Perfect for digital agencies, freelancers, and startups!`,
-    image: "public/images/digi.png",
+    image: "/images/digi.png",
     link: "https://sarojmishraa.github.io/digital-agency/",
   },
   {
@@ -74,7 +74,7 @@ This Digital Agency Website is a sleek, responsive, and visually appealing front
 ✅ 🏠 Browse Listings – View detailed property information
 ✅ 📍 Location-Based Search – Find homes near you
 `,
-    image: "public/images/housefinder.png",
+    image: "/images/housefinder.png",
     link: "https://sarojmishraa.github.io/HouseFinder/",
   },
   {
@@ -82,7 +82,7 @@ This Digital Agency Website is a sleek, responsive, and visually appealing front
     year: "march 2023",
     align: "left",
     description:" Built web applications with MySQL, React, PHP, HTML, CSS, and JavaScript, enhancing performance by 40%.  Perfected both front-end and Back-end code, reducing latency by 15% and improving load times. Conducted regular performance tests and debugging sessions, resulting in 25% fewer reported issues post-launch.",
-    image: "public/images/powerplus.png",
+    image: "/images/powerplus.png",
     link: "https://powerplus.co.in/",
   },
   {
@@ -90,7 +90,7 @@ This Digital Agency Website is a sleek, responsive, and visually appealing front
     year: "Jan 2023",
     align: "right",
     description:"This Task Management App is a full-stack project built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It enables users to create, manage, and track tasks efficiently while providing authentication, real-time updates, and a responsive UI.",
-    image: "public/images/tomato-img.png",
+    image: "/images/tomato-img.png",
     link: "https://github.com/sarojmishraa/tomato-delivery",
   },
 ];
