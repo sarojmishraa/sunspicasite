@@ -25,7 +25,7 @@ const Serviceoffers = () => {
 ">
           <div className="flex flex-col items-start space-y-4">
             <img
-              src="/src/components/Services/serviceImage/webimg.png"
+              src="/images/serviceImage/webimg.png"
               alt="Web Development"
               className="w-16 h-16"
             />

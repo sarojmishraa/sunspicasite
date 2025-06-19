@@ -8,7 +8,7 @@ const NavbarLogo = () => {
           <span className="sr-only">user menu</span>
           <img
             alt="User icon"
-            src="/public/images/icon.png"
+            src="/images/icon.png"
             className="h-8 w-8 rounded-full"
           />
         </MenuButton>

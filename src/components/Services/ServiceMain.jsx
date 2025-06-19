@@ -5,23 +5,23 @@ import Serviceoffers from "./Serviceoffers";
 import ServiceText from "./ServiceText";
 
 const whyChooseUs = {
-  img:"src/components/Services/serviceImage/s-top.png",
+  img:"/images/serviceImage/s-top.png",
   title: "We believe in empowering your success",
   points: [
     {
-      icon: "src/components/Services/serviceImage/rocket.gif",
+      icon: "/images/serviceImage/rocket.gif",
       title: "Fast working process",
       description:
         "With our streamlined and efficient working process, we ensure quick and effective implementation of IT solutions.",
     },
     {
-      icon: "src/components/Services/serviceImage/group.gif",
+      icon: "/images/serviceImage/group.gif",
       title: "Dedicated team",
       description:
         "You gain a dedicated team of technology experts committed to your success.",
     },
     {
-      icon: "src/components/Services/serviceImage/24-7.gif",
+      icon: "/images/serviceImage/24-7.gif",
       title: "24/7 hours support",
       description:
         "Your Technology Partner, Around the Clock Technology issues can arise at any time, and we are here to support you 24/7.",
@@ -35,50 +35,50 @@ const services = [
     title: "App Development Services",
     description:
     "Utilizing a tech stack consisting of React Native and Ionic for frontend development, Node.js, PHP Laravel, and Java Spring Boot for backend development, and AWS for deployment.",
-    image: "src/components/Services/serviceImage/app-services.png",
+    image: "/images/serviceImage/app-services.png",
   },
   {
     title: "Advertising Services",
     description:"Enagaging Nextgen Ads & Content formats built for the Newage Audience & Focused Communities of Advertisers Publishers. Maximize your brand's online visibility with our comprehensive digital advertising solutions, tailored to reach your target audience and drive measurable result",
-    image: "src/components/Services/serviceImage/ads-service.png",
+    image: "/images/serviceImage/ads-service.png",
   },
   {
     title: "Content Management System (CMS)",
     description:
 "A user-friendly platform for creating, managing, and publishing digital content. Empowers businesses to update and maintain their online presence, enabling them to deliver engaging and dynamic content to their audience.",
-    image: "src/components/Services/serviceImage/cms-service.png",
+    image: "/images/serviceImage/cms-service.png",
   },
   {
     title: "Digital Marketing)",
     description:
 "The tech stack includes a CMS,CRM system, Social Media Management Tools, SEO Tools, Analytics and Reporting Tools, Email Marketing Platforms, PPC Advertising Tools, Marketing Automation Platforms, and Data Analytics and Visualization Tools.",
-  image: "src/components/Services/serviceImage/digital-service.png",
+  image: "/images/serviceImage/digital-service.png",
   },
 
   {
     title: "Integration Project",
     description:
     "The tech stack for Integration Projects includes APIs for data exchange, ETL (Extract, Transform, Load) tools for data integration, and monitoring tools for tracking system performance and data flow",
-    image: "src/components/Services/serviceImage/integ-services.png",
+    image: "/images/serviceImage/Integ-services.png",
   },
   
   {
     title: "IOT Services",
     description:
 "The tech stack for IoT includes embedded systems and microcontrollers for device connectivity, communication protocols like MQTT or HTTP for data transmission, cloud platforms for data storage and analysis, edge computing for local data processing, and data visualization tools for real-time monitoring and insights",
-    image: "src/components/Services/serviceImage//iot-service.png",
+    image: "/images/serviceImage//iot-service.png",
   },
   {
     title: "Cloud Services",
     description:"The tech stack for Cloud Computing includes virtualization technologies for resource allocation, hypervisors for managing virtual machines, containerization platforms like Docker for application deployment, orchestration tools like for container management, and cloud service providers for infrastructure and platform provisioning",
-    image: "src/components/Services/serviceImage/cloud-service.png",
+    image: "/images/serviceImage/cloud-service.png",
   },
   
   {
     title: "AI/ML",
     description:
 "The tech stack for AI and ML includes programming languages like Python or R for building models, frameworks like TensorFlow or PyTorch for developing neural networks, cloud platforms for scalable computing power, data preprocessing tools for cleaning and transforming data, and libraries for statistical analysis and algorithm implementation",
-   image: "src/components/Services/serviceImage/ml-services.png",
+   image: "/images/serviceImage/ml-services.png",
   },
 ];
 
