@@ -45,7 +45,7 @@ const Serviceoffers = () => {
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
           <div className="bg-white p-6 rounded-lg shadow-lg w-96">
             <h2 className="text-xl font-semibold mb-4 text-cyan">Contact Us</h2>
-            <form className="flex flex-col space-y-4">
+            <form className="flex flex-col space-y-4" netlify method="POST" data-netlify="true">
               <div className="grid grid-cols-2 gap-4">
                 <input
                   type="text"

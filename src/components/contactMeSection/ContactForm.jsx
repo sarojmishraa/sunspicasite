@@ -32,7 +32,7 @@ const ContactForm = () => {
   return (
     <div>
       <p className="text-cyan">{success}</p>
-      <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+      <form onSubmit={handleSubmit} className="flex flex-col gap-4" netlify method="POST" data-netlify="true">
         <input
           type="text"
           name="name"
