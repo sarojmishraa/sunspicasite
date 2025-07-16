@@ -15,7 +15,7 @@ const experiences = [
     ],
   },
   {
-    job: "Software Engineer",
+    job: "Software Engineer Intern",
     company: "HackerRank",
     date: "February 2024 - April 2024",
     responsibilities: [
@@ -26,7 +26,7 @@ const experiences = [
   },
   {
     job: "Java Developer Intern & Software Engineer Intern",
-    company: "AppSquadz",
+    company: "CodeSquadz",
     date: "July 2023 - December 2023",
     responsibilities: [
       "Designed and developed Java-based applications.",

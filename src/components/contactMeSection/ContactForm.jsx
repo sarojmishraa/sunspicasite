@@ -1,46 +1,60 @@
 import { useState } from "react";
 
 const ContactForm = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [success, setSuccess] = useState("");
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [status, setStatus] = useState(""); // success or error message
+
+  const handleChange = (e) => {
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    
-    const formData = { name, email, message };
+    e.preventDefault(); // prevent default form reload
+    setStatus("Sending...");
 
     try {
-      const response = await fetch("http://localhost:5000/send-email", {
+      const response = await fetch("https://formsubmit.co/ajax/isarojmishraa@gmail.com", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
         body: JSON.stringify(formData),
       });
 
-      const data = await response.json();
-      setSuccess(data.message);
-      setName("");
-      setEmail("");
-      setMessage("");
+      const result = await response.json();
+
+      if (response.ok) {
+        setStatus("✅ Message sent successfully!");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        setStatus("❌ Failed to send message: " + result.message);
+      }
     } catch (error) {
-      console.error("Error sending message:", error);
-      setSuccess("Failed to send message.");
+      setStatus("❌ Failed to send message. Please try again.");
     }
   };
 
   return (
     <div>
-      <p className="text-cyan">{success}</p>
-      <form onSubmit={handleSubmit} className="flex flex-col gap-4" netlify method="POST" data-netlify="true">
+      {status && <p className="text-cyan font-semibold">{status}</p>}
+
+      <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         <input
           type="text"
           name="name"
           placeholder="Your Name"
           required
           className="h-12 rounded-lg bg-lightBrown px-2"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
+          value={formData.name}
+          onChange={handleChange}
         />
         <input
           type="email"
@@ -48,8 +62,8 @@ const ContactForm = () => {
           placeholder="Your Email"
           required
           className="h-12 rounded-lg bg-lightBrown px-2"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          value={formData.email}
+          onChange={handleChange}
         />
         <textarea
           name="message"
@@ -57,8 +71,8 @@ const ContactForm = () => {
           placeholder="Message"
           required
           className="rounded-lg bg-lightBrown p-2"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
+          value={formData.message}
+          onChange={handleChange}
         />
         <button
           type="submit"
