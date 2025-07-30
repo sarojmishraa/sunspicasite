@@ -1,5 +1,23 @@
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+
+const LINKEDIN_SCRIPT_ID = "linkedin-badge-script";
+
 const AboutMeText = () => {
+  const [showBadge, setShowBadge] = useState(false);
+
+  useEffect(() => {
+    if (showBadge && !document.getElementById(LINKEDIN_SCRIPT_ID)) {
+      const script = document.createElement("script");
+      script.src = "https://platform.linkedin.com/badges/js/profile.js";
+      script.async = true;
+      script.defer = true;
+      script.type = "text/javascript";
+      script.id = LINKEDIN_SCRIPT_ID;
+      document.body.appendChild(script);
+    }
+  }, [showBadge]);
+
   return (
     <div className="flex flex-col md:items-start sm:items-center md:text-left sm:text-center">
       <h2 className="text-6xl font-extrabold text-cyan mb-10 drop-shadow-lg animate-pulse">About Me</h2>
@@ -50,9 +68,33 @@ const AboutMeText = () => {
           </motion.div>
           
           <motion.div className="p-6 bg-gray-700 rounded-xl shadow-lg text-center" whileHover={{ scale: 1.05 }}>
-            <div className="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="saroj-mishra-504423256" data-version="v1">
-              <a className="badge-base__link LI-simple-link text-blue-400 hover:text-blue-300" href="https://in.linkedin.com/in/saroj-mishra-504423256?trk=profile-badge" target="_blank">Saroj Mishra</a>
-            </div>
+            {!showBadge ? (
+              <button
+                className="badge-base__link LI-simple-link text-blue-400 hover:text-blue-300 font-bold py-2 px-4 rounded"
+                onClick={() => setShowBadge(true)}
+              >
+                Saroj Mishra
+              </button>
+            ) : (
+              <div
+                className="badge-base LI-profile-badge"
+                data-locale="en_US"
+                data-size="medium"
+                data-theme="light"
+                data-type="VERTICAL"
+                data-vanity="saroj-mishra-504423256"
+                data-version="v1"
+              >
+                <a
+                  className="badge-base__link LI-simple-link text-blue-400 hover:text-blue-300"
+                  href="https://in.linkedin.com/in/saroj-mishra-504423256?trk=profile-badge"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Saroj Mishra
+                </a>
+              </div>
+            )}
           </motion.div>
         </motion.div>
       </div>

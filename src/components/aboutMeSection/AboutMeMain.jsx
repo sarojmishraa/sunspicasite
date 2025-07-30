@@ -27,5 +27,4 @@ const AboutMeMain = () => {
     </div>
   );
 };
-
 export default AboutMeMain;
